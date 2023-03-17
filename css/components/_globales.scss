@@ -4,6 +4,35 @@ $color-primario: #333333;
 $color-claro: #FFFFFF;
 $color-secundario: #8841DA;
 $color-variacion: #3f569a;
+$dark-mode: true;
+
+@mixin dark{
+	@if $dark-mode == true{
+		.perfil{
+			background-color: $color-claro;
+			&__nombre{
+				color: $color-secundario;
+			} 
+			&__titulo{
+				color: $color-variacion;
+			}
+			&__boton{
+				background-color: $color-primario;
+			}
+		}
+		.articulos{
+			background-color: $color-primario;
+		}
+		.articulo{
+			&__titulo{
+				color: $color-claro;
+			}
+			&__descripcion{
+				color: $color-claro;
+			}
+		}
+	}
+}
 
 @mixin caja {
 	border-radius: 20px;
@@ -39,6 +68,7 @@ $color-variacion: #3f569a;
 body {
 	margin: 0;
 	@include titulos($Fuente1);
+	@include dark;
 }
 
 main {

@@ -22,6 +22,27 @@ body {
   margin: 0;
   font-family: "Lato", sans-serif;
 }
+body .perfil {
+  background-color: #FFFFFF;
+}
+body .perfil__nombre, body .perfil__minibio h2, .perfil__minibio body h2 {
+  color: #8841DA;
+}
+body .perfil__titulo, body .perfil__minibio h3, .perfil__minibio body h3 {
+  color: #3f569a;
+}
+body .perfil__boton {
+  background-color: #333333;
+}
+body .articulos {
+  background-color: #333333;
+}
+body .articulo__titulo {
+  color: #FFFFFF;
+}
+body .articulo__descripcion {
+  color: #FFFFFF;
+}
 
 main {
   display: -webkit-box;
